@@ -1,0 +1,13 @@
+CREATE TABLE tb_usuario(
+	id_user serial primary key,
+	tx_name varchar(100) NOT NULL,
+	tx_email varchar(200) NOT NULL,
+	tx_password varchar(512) NOT NULL,
+	nr_age INTEGER NOT NULL,
+	dt_birthdate DATE NOT NULL,
+	nr_document NUMERIC(18,0) NOT NULL
+);
+
+INSERT INTO tb_usuario(tx_name, tx_email, tx_password, nr_age, dt_birthdate, nr_document)
+VALUES ('Welinton Oestreich', 'welintonoestreich@gmail.com', 'senha123', 18, '2008-02-17', 13408024901);
+
